@@ -20,5 +20,5 @@ jobs:
         run: |
           curl https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute -o hyperexecute
           chmod +x hyperexecute
-          ./hyperexecute --user $LT_USERNAME --key $LT_ACCESS_KEY --download-artifacts --config yaml/win/testng_hyperexecute_autosplit_sample.yaml --labels TestNG,Merge-Trigger
+          ./hyperexecute --user $LT_USERNAME --key $LT_ACCESS_KEY --download-artifacts --config yaml/win/testng_hyperexecute_autosplit_sample.yaml --labels TestNG,Merge-Trigger,Pipe
           echo "Test completion"
